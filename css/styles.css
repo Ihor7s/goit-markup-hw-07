@@ -559,10 +559,10 @@ display: block;
     display: flex;
     padding: 0;
 }
-.container-list:not(:first-child) {
+.features__list:not(:first-child) {
     margin-left: 30px;
 }
-.features-list {
+.features__container {
     width: 270px;
     height: 120px;
     border-radius: 4px;
@@ -570,12 +570,35 @@ display: block;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.features__container--margin {
     margin-bottom: 30px;
 }
-.icon-features {
+.features__icon {
     width: 70px;
     height: 70px;
 }
+
+.features__title {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14x;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    color: var(--color-text);
+}
+.features__title--margin {
+    margin-bottom: 10px;
+}
+.features__subtitle {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.7;
+    letter-spacing: 0.03em;
+    color: var(--color-text-secohd);
+    width: 270px;
+}
+
 /*.container-list::before {
     content: "";
     display: block;
@@ -599,24 +622,6 @@ display: block;
     background-image: url(../images/section_2/astronaut.svg);
 }*/
 
-
-.list {
-    font-weight: 700;
-    font-size: 14px;
-    line-height: 1.14x;
-    letter-spacing: 0.03em;
-    text-transform: uppercase;
-    color: var(--color-text);
-    margin-bottom: 10px;
-}
-.list-item {
-    font-weight: 400;
-    font-size: 14px;
-    line-height: 1.7;
-    letter-spacing: 0.03em;
-    color: var(--color-text-secohd);
-    width: 270px;
-}
 
 /*чим ми займаємося*/
 .work-section {
