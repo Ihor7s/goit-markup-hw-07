@@ -1,5 +1,60 @@
+:root {
+    --color-text: #212121;
+    /*основний колір тексту*/
+    --color-text-secohd: #757575;
+    /*колір тексту другий*/
+    --color-text-logo: #2196F3;
+    /*колір лого і нав хедер*/
+    --color-text-logo2: #000000;
+    /*колір лого*/
+    --primery-background: #ffffff;
+    /* колір фону хедер */
+    --second-background: #2F303A;
+    /*колір фону зверху секція 1 та футер*/
+    --filter-color: #F5F4FA;
+    /*колір наша команда фон кнопок портфоліо*/
+    --background-olor: #F5F5F5;
+    /*основний колір фону*/
+    --border-color: #AFB1B8;
+    /*анімація*/
+    --animation: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+html {
+    box-sizing: border-box;
+}
 
+*,
+*::before,
+*::after {
+    box-sizing: inherit;
+}
 
+body {
+    font-family: Roboto, sans-serif;
+    background-color: var(--primery-background);
+    color: var(--color-text);
+    margin: 0;
+}
+
+ul {
+    list-style: none;
+    text-decoration: none;
+    margin: 0;
+    padding: 0;
+
+}
+
+img {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+h2,
+h3,
+p {
+    margin: 0;
+}
 
 
 /*logo*/ /*дизайн основної сторінки*/
@@ -169,8 +224,6 @@ transform: scaleX(1);
     fill: var(--color-text-secohd);
     transition: fill var(--animation);
 }
-.auth-nav-text {
-}
 
 .heder-contact:hover .heder-contact-mailto {
     fill: var(--color-text-logo);
@@ -315,9 +368,7 @@ transform: scaleX(1);
     color: var(--color-text);
 
 }
-.modal-form {
 
-}
 .form-group {
 margin-bottom: 20px;
 
@@ -592,9 +643,6 @@ display: block;
     margin-right: 30px;
     z-index: -1;
 }
-.work-img {
-    
-}
 
 .list-work-img:last-child {
     margin-right: 0;
@@ -626,9 +674,7 @@ display: block;
 
 /*наша команда*/
 
-.team {
-    
-}
+
 .team-section {
     background-color: var(--filter-color);
     padding-bottom: 94px;
@@ -704,8 +750,6 @@ display: block;
     margin-left: 0;
 
 }
-.foto-team {
-}
 
 .title-team {
     font-weight: 700;
@@ -732,8 +776,7 @@ display: block;
     gap: 30px;
 }
 
-.company-item {
-}
+
 .icon-company {
     width: 106px;
     height: 60px;
@@ -766,9 +809,7 @@ display: block;
     display: flex;
     align-items: baseline;
 }
-.logo-footer {
-    
-}
+
 .logo {
     font-weight: 700;
     font-size: 26px;
@@ -799,9 +840,6 @@ display: block;
 .adres {
     font-style: normal;
     margin-top: 20px;
-}
-
-.adres-list {
 }
 
 .adres-list-ithem {
@@ -865,12 +903,6 @@ margin-bottom: 9px;
     text-transform: uppercase;
     color: #FFFFFF;
     margin-bottom: 20px;
-    
-}
-.form-footer-subscribe {
-    
-}
-.label-form-footer-email {
     
 }
 
@@ -1003,8 +1035,6 @@ margin-bottom: 0;
     margin: 0;
     max-width: 322px;
     margin-bottom: 4px;
-}
-.image-portfolio {
 }
 
 .lead-portfolio {
