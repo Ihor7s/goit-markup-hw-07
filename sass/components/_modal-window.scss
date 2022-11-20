@@ -43,21 +43,20 @@
     border: 1px solid rgba(0, 0, 0, 0.1);
     transition: var(--animation);
     cursor: pointer;
+
+    &:focus {
+        fill: var(--color-text-logo);
+        border-color: var(--color-text-logo);
+    }
+    &:hover {
+        fill: var(--color-text-logo);
+        border-color: var(--color-text-logo);
+    }
+    &:focus-visible {
+        outline: none;
+    }
 }
 
-.modal__button:focus {
-    fill: var(--color-text-logo);
-    border-color: var(--color-text-logo);
-}
-
-.modal__button:hover {
-    fill: var(--color-text-logo);
-    border-color: var(--color-text-logo);
-}
-
-.modal__button:focus-visible {
-    outline: none;
-}
 
 .modal__icon {
     padding: 0;
@@ -97,9 +96,7 @@
     border: 1px solid var(--color-text-logo);
 }
 
-.form__input:focus-visible {
-    outline: none;
-}
+
 
 .form__input {
     width: 100%;
@@ -115,6 +112,10 @@
     color: rgba(117, 117, 117, 0.5);
     padding-left: 42px;
     transition: var(--animation);
+
+    &:focus-visible {
+            outline: none;
+        }
 }
 
 .form__input:focus+.form__icon {
@@ -182,16 +183,16 @@
     background-repeat: no-repeat;
     transition: var(--animation);
     background-position: center;
+
+    &:checked {
+        background-color: var(--color-text-logo);
+        border: transparent;
+    }
+    &:focus-visible {
+        outline: none;
+    }
 }
 
-.form-checkbox__input:checked {
-    background-color: var(--color-text-logo);
-    border: transparent;
-}
-
-.form-checkbox__input:focus-visible {
-    outline: none;
-}
 
 .form-checkbox__text {
     font-weight: 400;
@@ -205,11 +206,12 @@
 .form-checkbox__umovy-dohovoru {
     text-decoration-line: underline;
     color: var(--color-text-logo);
+
+    &:focus-visible {
+        outline: none;
+    }
 }
 
-.form-checkbox__umovy-dohovoru:focus-visible {
-    outline: none;
-}
 
 .form__massage {
     padding: 12px 16px;
@@ -224,17 +226,16 @@
     letter-spacing: 0.01em;
     color: rgba(117, 117, 117, 0.5);
     transition: var(--animation);
-}
 
-.form__massage::placeholder {
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 14px;
-    letter-spacing: 0.01em;
-    color: rgba(117, 117, 117, 0.5);
-    resize: none;
-}
-
-.form__massage:focus-visible {
-    outline: none;
+    &::placeholder {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 14px;
+        letter-spacing: 0.01em;
+        color: rgba(117, 117, 117, 0.5);
+        resize: none;
+    }
+    &:focus-visible {
+        outline: none;
+    }
 }

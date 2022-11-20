@@ -22,10 +22,10 @@
     border-radius: 4px;
     color: var(--border-color);
     transition: color var(--animation), border-color var(--animation);
+    &:hover,
+    &:focus {
+        border-color: var(--color-text-logo);
+        color: var(--color-text-logo);
+    }
 }
 
-.company__link:hover,
-.company__link:focus {
-    border-color: var(--color-text-logo);
-    color: var(--color-text-logo);
-}

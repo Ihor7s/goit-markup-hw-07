@@ -17,11 +17,11 @@
     display: inline-block;
     margin-right: 30px;
     z-index: -1;
+    &:last-child {
+        margin-right: 0;
+    }
 }
 
-.list-work:last-child {
-    margin-right: 0;
-}
 
 .list-work__content {
     position: absolute;

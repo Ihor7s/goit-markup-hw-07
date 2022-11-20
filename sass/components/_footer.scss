@@ -32,11 +32,13 @@
 .adres__list--ithem {
     flex-wrap: wrap;
     margin-bottom: 9px;
+
+&:last-child {
+        margin-bottom: 0;
+    }
 }
 
-.adres__list--ithem:last-child {
-    margin-bottom: 0;
-}
+
 
 .adres__list--maps {
     font-weight: 400;

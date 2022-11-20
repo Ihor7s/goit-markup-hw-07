@@ -7,11 +7,11 @@
 
 .portfolio-list__item {
     margin-left: 8px;
+    &:first-child {
+        margin-left: 0;
+    }
 }
 
-.portfolio-list__item:first-child {
-    margin-left: 0;
-}
 
 .portfolio-list__button {
     font-family: roboto;
@@ -32,18 +32,18 @@
     display: block;
     transition: box-shadow var(--animation), background var(--animation), color var(--animation);
 
+    &:hover, {
+        left: 512px;
+        background: var(--color-text-logo);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: var(--primery-background);
+    }
+    &:focus {
+        left: 512px;
+        background: var(--color-text-logo);
+        box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+        color: var(--primery-background);
+    }
 }
 
-.portfolio-list__button:hover {
-    left: 512px;
-    background: var(--color-text-logo);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    color: var(--primery-background);
-}
 
-.portfolio-list__button:focus {
-    left: 512px;
-    background: var(--color-text-logo);
-    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
-    color: var(--primery-background);
-}

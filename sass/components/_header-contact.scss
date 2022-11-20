@@ -17,6 +17,11 @@
     align-items: center;
     color: var(--color-text-secohd);
     transition: color var(--animation);
+
+    &:hover,
+        :focus {
+            color: var(--color-text-logo);
+        }
 }
 
 .contact__mailto {
@@ -46,7 +51,3 @@
     fill: var(--color-text-logo);
 }
 
-.contact__link:hover,
-:focus {
-    color: var(--color-text-logo);
-}
